@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mainpage.css">
+    </head>
+    <body>
+        <div class="image0"></div>
+        <ul class="button-align">
+            <button id= "upload" class="upload"></button>
+            <button id = "download" class="download"></button>
+            <button id="newfolder" class="newfolder"></button>
+            <button id="deletefolder" class="deletefolder"></button>
+            <button id="newfile" class="newfile"></button>
+            <button id= "deletefile" class="deletefile"></button>
+        </ul>
+        <div id="uploadModal" class="modal">
+            <div class="modal-content">
+                <span id="uploadClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Upload</h1>
+                </p>
+                <form id="uploadForm">
+                    Input the name of the file you would like to upload:
+                    <br><br>
+                    <input type="text" name="upfile">
+                    <br><br>
+                    <input type="submit" value="Upload">
+                </form>
+            </div>
+        </div>
+        <div id="downloadModal" class="modal">
+            <div class="modal-content">
+                <span id="downloadClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Download</h1>
+                </p>
+                <form id="downloadForm">
+                    Input the name of the file you would like to download:
+                    <br><br>
+                    <input type="text" name="downfile">
+                    <br><br>
+                    <input type="submit" value="Download">
+                </form>
+            </div>
+        </div>
+        <div id="newfolderModal" class="modal">
+            <div class="modal-content">
+                <span id="newfolderClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Create Folder</h1>
+                </p>
+                <form id="newfolderForm">
+                    Input the name of the folder you would like to create:
+                    <br><br>
+                    <input type="text" name="createFolder">
+                    <br><br>
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+        </div>
+        <div id="deletefolderModal" class="modal">
+            <div class="modal-content">
+                <span id="deletefolderClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Delete Folder</h1>
+                </p>
+                <form id="deletefolderForm">
+                    Input the name of the folder you would like to delete:
+                    <br><br>
+                    <input type="text" name="removeFolder">
+                    <br><br>
+                    <input type="submit" value="Delete">
+                </form>
+            </div>
+        </div>
+        <div id="newfileModal" class="modal">
+            <div class="modal-content">
+                <span id="newfileClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Create File</h1>
+                </p>
+                <form id="newfileForm">
+                    Input the name of the file you would like to create:
+                    <br><br>
+                    <input type="text" name="createFile">
+                    <br><br>
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+        </div>
+        <div id="deletefileModal" class="modal">
+            <div class="modal-content">
+                <span id="deletefileClose" class="modal-close-button">&times;</span>
+                <p>
+                    <h1>Delete File</h1>
+                </p>
+                <form id="deletefileForm">
+                    Input the name of the file you would like to delete:
+                    <br><br>
+                    <input type="text" name="removeFile">
+                    <br><br>
+                    <input type="submit" value="Delete">
+                </form>
+            </div>
+        </div>
+
+        <script>
+            //Block for the upload modal.
+            var uploadModal = document.getElementById("uploadModal");
+            var uploadButton = document.getElementById("upload");
+            var uploadClose = document.getElementById("uploadClose");
+            uploadButton.onclick = function() {
+                uploadModal.style.display = "block";
+            }
+            uploadClose.onclick = function() {
+                uploadModal.style.display = "none";
+            }   
+
+            //Block for the download modal.
+            var downloadModal = document.getElementById("downloadModal");
+            var downloadButton = document.getElementById("download");
+            var downloadClose = document.getElementById("downloadClose");
+            downloadButton.onclick = function() {
+                downloadModal.style.display = "block";
+            }
+            downloadClose.onclick = function() {
+                downloadModal.style.display = "none";
+            }   
+
+            //Block for the new folder modal.
+            var newfolderModal = document.getElementById("newfolderModal");
+            var newfolderButton = document.getElementById("newfolder");
+            var newfolderClose = document.getElementById("newfolderClose");
+            newfolderButton.onclick = function() {
+                newfolderModal.style.display = "block";
+            }
+            newfolderClose.onclick = function() {
+                newfolderModal.style.display = "none";
+            }
+
+            //Block for the delete folder modal.
+            var deletefolderModal = document.getElementById("deletefolderModal");
+            var deletefolderButton = document.getElementById("deletefolder");
+            var deletefolderClose = document.getElementById("deletefolderClose");
+            deletefolderButton.onclick = function() {
+                deletefolderModal.style.display = "block";
+            }
+            deletefolderClose.onclick = function() {
+                deletefolderModal.style.display ="none";
+            }
+
+            //Block for the new file modal.
+            var newfileModal = document.getElementById("newfileModal");
+            var newfileButton = document.getElementById("newfile");
+            var newfileClose = document.getElementById("newfileClose");
+            newfileButton.onclick = function() {
+                newfileModal.style.display = "block";
+            }
+            newfileClose.onclick = function() {
+                newfileModal.style.display = "none";
+            }
+
+            //Block for the delete file modal.
+            var deletefileModal = document.getElementById("deletefileModal");
+            var deletefileButton = document.getElementById("deletefile");
+            var deletefileClose = document.getElementById("deletefileClose");
+            deletefileButton.onclick = function() {
+                deletefileModal.style.display = "block";
+            }
+            deletefileClose.onclick = function() {
+                deletefileModal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

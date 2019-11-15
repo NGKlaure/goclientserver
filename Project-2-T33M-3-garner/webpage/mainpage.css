@@ -1,0 +1,231 @@
+/*Sets the webpage background to the webpagebg image.*/
+body {
+    background-image: url('./images/webpagebg.png');
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+button {
+    display: inline;
+}
+
+/*Class to display our logo.*/
+div.image0 {
+    content: url("./images/team3small.png");
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Class that moves the buttons to their proper place.*/
+.button-align {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+/*Modal background template used to take in file/folder names for buttons.*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+}
+
+/*Template for modal content.*/
+.modal-content {
+    background-color: rgb(255,255,255);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(80,80,80);
+    width: 80%;
+}
+
+/*Button to close modal if you change your mind.*/
+.modal-close-button {
+    color: rgb(128,128,128);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-close-button:hover {
+    color: rgb(255,0,0);
+    cursor: pointer;
+    text-decoration: none;
+}
+.modal-close-button:active {
+    color: rgb(192,0,0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Upload buttons and states -- :hover changes the icon when it's hovered over, and :active changes the icon when it's clicked.*/
+.upload {
+    background: url('./images/upload-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.upload:hover {
+    background: url('./images/upload-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.upload:active {
+    background: url('./images/upload-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+/*Download buttons and states.*/
+.download {
+    background: url('./images/download-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.download:hover {
+    background: url('./images/download-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.download:active {
+    background: url('./images/download-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+/*New folder buttons and states.*/
+.newfolder {
+    background: url('./images/newfolder-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.newfolder:hover {
+    background: url('./images/newfolder-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.newfolder:active {
+    background: url('./images/newfolder-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+/*Delete folder buttons and states.*/
+.deletefolder {
+    background: url('./images/deletefolder-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.deletefolder:hover {
+    background: url('./images/deletefolder-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.deletefolder:active {
+    background: url('./images/deletefolder-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+/*New files buttons and states.*/
+.newfile {
+    background: url('./images/newfile-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.newfile:hover {
+    background: url('./images/newfile-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.newfile:active {
+    background: url('./images/newfile-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+/*Delete file buttons and states.*/
+.deletefile {
+    background: url('./images/deletefile-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.deletefile:hover {
+    background: url('./images/deletefile-hover-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.deletefile:active {
+    background: url('./images/deletefile-pressed-icon.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}

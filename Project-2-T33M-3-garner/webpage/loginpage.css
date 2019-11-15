@@ -1,0 +1,19 @@
+/*Sets the webpage background to the webpagebg image.*/
+body {
+    background-image: url("./images/webpagebg.png");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+/*Class to display our logo.*/
+div.image0 {
+    content: url("./images/team3small.png");
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

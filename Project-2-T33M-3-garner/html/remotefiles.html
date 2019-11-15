@@ -1,0 +1,22 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Remote Files</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <h1>REMOTE FILES</h1>
+        <body>
+                <form action="downloader" method="POST">
+                        File to DOWNLOAD: <input name="download1" type="text"/><br>
+                        
+                        <input type="submit" value="button"/>
+                </form>
+                <a class="btn btn-primary btn-lg btn-block" href="index.html">Index</a>   
+                Remote files
+                <br>
+                {{range .FILES}} 
+                <br>
+                <td align="center">{{.}}</td>
+                {{end}}
+        </body>
+    </html>
